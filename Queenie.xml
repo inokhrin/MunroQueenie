@@ -11,7 +11,7 @@
             <p>Information about the source</p>
          </sourceDesc>
       </fileDesc>
-  <xenoData><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:as="http://www.w3.org/ns/activitystreams#" xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:geo="http://www.geonames.org/ontology#" xmlns:oa="http://www.w3.org/ns/oa#" xmlns:schema="http://schema.org/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:fabio="https://purl.org/spar/fabio#" xmlns:bf="http://www.openlinksw.com/schemas/bif#" xmlns:cito="https://sparontologies.github.io/cito/current/cito.html#" xmlns:org="http://www.w3.org/ns/org#">
+      <xenoData><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:as="http://www.w3.org/ns/activitystreams#" xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:geo="http://www.geonames.org/ontology#" xmlns:oa="http://www.w3.org/ns/oa#" xmlns:schema="http://schema.org/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:fabio="https://purl.org/spar/fabio#" xmlns:bf="http://www.openlinksw.com/schemas/bif#" xmlns:cito="https://sparontologies.github.io/cito/current/cito.html#" xmlns:org="http://www.w3.org/ns/org#">
         <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
           <![CDATA[{
 	"@context": {
@@ -167,17 +167,44 @@
 	}
 }]]>
         </rdf:Description>
-      </rdf:RDF></xenoData></teiHeader>
+      </rdf:RDF></xenoData><profileDesc>
+          <particDesc>
+              <listPerson>
+                  <person xml:id="Queenie">
+                      <persName>Queenie</persName>
+                  </person>
+                  <person xml:id="Stan">
+                      <persName>Stan Vorguilla</persName>
+                  </person>
+                      <person xml:id="Bet">
+                              <persName>Bet</persName>
+                      </person>
+                      <person xml:id="Andrew">
+                              <persName>Andrew</persName>
+                      </person>
+                      <person xml:id="Marigold">
+                              <persName>Marigold Vorguilla</persName>
+                      </person>
+                      <person xml:id="Hovey">
+                              <persName>Mr Hovey</persName>
+                      </person>
+                      <person xml:id="Chrissy">
+                              <persName>Chrissy</persName>
+                      </person>
+              </listPerson>
+          </particDesc>
+      </profileDesc>
+  </teiHeader>
   <text>
       <body>
-        <p><persName key="Queenie">Queenie</persName> said, ‘Maybe you better stop calling me that,’ and I said,
+        <p><persName key="Queenie" ref="#Queenie">Queenie</persName> said, ‘Maybe you better stop calling me that,’ and I said,
                 ‘What?’</p>
-        <p>‘<persName key="Stan">Stan</persName>
-                doesn’t like it,’ she said. ‘<persName key="Queenie">Queenie</persName>.’</p>
+        <p>‘<persName key="Stan" ref="#Stan">Stan</persName>
+                doesn’t like it,’ she said. ‘<persName key="Queenie" ref="#Queenie">Queenie</persName>.’</p>
         <p>It was a
-                worse surprise to me to hear her say ‘<persName key="Stan">Stan</persName>’ than to have her tell me to call her by
-                her right name, which was <persName key="Lena">Lena</persName>. But I could hardly expect her to go on calling him
-                <persName type="fictional">Mr Vorguilla</persName>, now that they were married, and had been for nearly two years.
+                worse surprise to me to hear her say ‘<persName key="Stan" ref="#Stan">Stan</persName>’ than to have her tell me to call her by
+                her right name, which was <persName key="Lena" ref="#Queenie">Lena</persName>. But I could hardly expect her to go on calling him
+                <persName key="Mr Vorguilla" ref="#Stan">Mr Vorguilla</persName>, now that they were married, and had been for nearly two years.
                 During that time I hadn’t seen her, and for a moment when I saw her in the
                 group of people waiting for the train at <placeName key="Union Station" ref="http://www.wikidata.org/entity/Q511316">Union Station</placeName>, I hadn’t recognised
                 her. Her hair was dyed black, and puffed up around her face in whatever style it
@@ -192,10 +219,10 @@
                 known what to say to her. I saw her look at me with some surprise as well. I tried
                 to be bold and easy-going. I said, ‘Is that a dress or a frill around your bum?’ She
                 laughed, and I said, ‘Was it ever hot on the train, I’m sweating like a pig.’ I
-                could hear my own loud voice, as twangy and vulgar as <persName key="Bet">Bet</persName>’s. Sweating like a
+                could hear my own loud voice, as twangy and vulgar as <persName key="Bet" ref="#Bet">Bet</persName>’s. Sweating like a
                 pig.</p>
         <p>Now on the
-                streetcar going to <persName key="Lena">Lena</persName>’s place I couldn’t stop the stupidity. I said, ‘Are we still
+                streetcar going to <persName key="Lena" ref="#Queenie">Lena</persName>’s place I couldn’t stop the stupidity. I said, ‘Are we still
                 downtown?’ The high buildings had been quickly left behind
                 but I didn’t think you could call this area residential. The same thing went on
                 over and over again - a dry cleaner, a florist, a grocery store, a restaurant.
@@ -203,13 +230,13 @@
                 and dressmakers and plumbing suppliers in the second-storey windows. Hardly a
                 building higher than that, hardly a tree.</p>
         <p>‘It’s not
-                the real downtown,’ said <persName key="Queenie">Queenie</persName>. ‘Remember I showed you where <orgName key="Simpsons" ref="http://www.wikidata.org/entity/Q935959">Simpson’s</orgName> was? Where
+                the real downtown,’ said <persName key="Queenie" ref="#Queenie">Queenie</persName>. ‘Remember I showed you where <orgName key="Simpsons" ref="http://www.wikidata.org/entity/Q935959">Simpson’s</orgName> was? Where
                 we got on the streetcar? That’s the real.’</p>
         <p>‘So are we
                 nearly there?’ I said.</p>
         <p>She said,
-                ‘We got a ways to go yet.’ Then she said, ‘Way. <persName key="Stan">Stan</persName> doesn’t like me saying “ways”
-                either. The trouble with <persName key="Queenie">Queenie</persName>, he says it reminds him of a horse.’</p>
+                ‘We got a ways to go yet.’ Then she said, ‘Way. <persName key="Stan" ref="#Stan">Stan</persName> doesn’t like me saying “ways”
+                either. The trouble with <persName key="Queenie" ref="#Queenie">Queenie</persName>, he says it reminds him of a horse.’</p>
         <p>The
                 repetition of things, or maybe the heat, was making me feel anxious and slightly
                 sick. We were holding my suitcase on our knees and only a couple of inches ahead of
@@ -218,7 +245,7 @@
                 up. For some reason I thought of <persName type="fictional">Mr Vorguilla</persName>’s teeth in the medicine cabinet.
                 Two teeth sitting beside his razor and shaving-brush and the wooden bowl
                 holding his possibly hairy and disgusting shaving-soap. I had looked in the medicine
-                cabinet when it wasn’t any of my business and I brought <persName key="Queenie">Queenie</persName> in and showed
+                cabinet when it wasn’t any of my business and I brought <persName key="Queenie" ref="#Queenie">Queenie</persName> in and showed
                 her.</p>
         <p>‘I know,’
                 she said. ‘It’s his bridge.’</p>
@@ -228,11 +255,11 @@
                 He’s wearing his others. These are his spares.’</p>
         <p>‘Yuck,’ I
                 said. ‘Aren’t they yellow?’</p>
-        <p>‘Shut up,’ said <persName key="Queenie">Queenie</persName>. But she was
+        <p>‘Shut up,’ said <persName key="Queenie" ref="#Queenie">Queenie</persName>. But she was
                 laughing.</p>
         <p><persName key="Mrs Vorguilla">Mrs Vorguilla</persName> was lying on the dining-room
                 couch with her eyes shut, but maybe not sleeping.</p>
-        <p>‘What he doesn’t like about <persName key="Queenie">Queenie</persName>,’ <persName key="Queenie">Queenie</persName>
+        <p>‘What he doesn’t like about <persName key="Queenie" ref="#Queenie">Queenie</persName>,’ <persName key="Queenie" ref="#Queenie">Queenie</persName>
                 said, ‘is he says it reminds him of a horse.’</p>
         <p>When we
                 got off the streetcar at last we
@@ -243,19 +270,19 @@
                 were dark green or maroon or brown. The porches came to within a few feet of
                 the sidewalk and the spaces between the houses seemed narrow enough for people
                 to reach out the side windows and shake hands. Children were playing on the
-                sidewalk, but <persName key="Queenie">Queenie</persName> took no more notice of them than if they were birds
+                sidewalk, but <persName key="Queenie" ref="#Queenie">Queenie</persName> took no more notice of them than if they were birds
                 pecking in the cracks. A very fat man, naked from the waist up, sat on his front
                 staring at us in such a fixed and gloomy way that I was sure he had something
-                to say to us. But <persName key="Queenie">Queenie</persName> marched on past him.</p>
+                to say to us. But <persName key="Queenie" ref="#Queenie">Queenie</persName> marched on past him.</p>
         <p>She turned
                 in partway up the hill, following a gravel path between some garbage tins. Out of an
-                upstairs window a woman called something that I found unintelligible. <persName key="Queenie">Queenie</persName> called
+                upstairs window a woman called something that I found unintelligible. <persName key="Queenie" ref="#Queenie">Queenie</persName> called
                 back, ‘It’s just my sister, she’s visiting.’</p>
         <p>‘Our
-                landlady,’ she said. ‘They live in the front and upstairs. They’re Greeks. She
+                landlady,’ she said. ‘They live in the front and upstairs. They’re <persName>Greeks</persName>. She
                 doesn’t speak hardly any English.’</p>
         <p>It turned
-                out that <persName key="Queenie">Queenie</persName> and <persName type="fictional">Mr Vorguilla</persName> shared a bathroom with the Greeks. You took your
+                out that <persName key="Queenie" ref="#Queenie">Queenie</persName> and <persName key="Mr Vorguilla" ref="#Stan">Mr Vorguilla</persName> shared a bathroom with the <persName>Greeks</persName>. You took your
                 roll of toilet paper with you - if you forgot, there wasn’t any. I had to go in
                 there at once, because I was menstruating heavily and had to change my pad. For
                 years afterwards, the sight of certain city streets on hot days, certain shades
@@ -263,14 +290,14 @@
                 bring back to me the memory of cramps low in the belly, waves of
                 flushing, bodily leakage and confusion.</p>
         <p>There was
-                one bedroom where <persName key="Queenie">Queenie</persName> slept with <persName key="Mr Vorguilla">Mr Vorguilla</persName>, and another bedroom turned into a
+                one bedroom where <persName key="Queenie" ref="#Queenie">Queenie</persName> slept with <persName key="Mr Vorguilla" ref="#Stan">Mr Vorguilla</persName>, and another bedroom turned into a
                 small living-room, and a narrow kitchen, and a sun porch. The cot in the sun porch
                 was where I was to sleep. Close outside the windows the landlord and another
                 man were fixing a motorcycle. The smell of oil, of metal and machinery mixed
                 with the smell of ripe tomatoes in the sun. There was a radio blaring music out
                 of an upstairs window.</p>
         <p>‘One thing
-                <persName key="Stan">Stan</persName> can’t stand’, said <persName key="Queenie">Queenie</persName>. ‘That radio.’ She pulled the flowered curtains
+                <persName key="Stan" ref="#Stan">Stan</persName> can’t stand’, said <persName key="Queenie" ref="#Queenie">Queenie</persName>. ‘That radio.’ She pulled the flowered curtains
                 close, but the noise and sun still came through. ‘I wish I could’ve afforded
                 lining,’ she said.</p>
         <p>I had the
@@ -281,7 +308,7 @@
                 tried to be nonchalant, and act as if I felt welcome. ‘I need to get a nice cool
                 dress like yours,’ I said.</p>
         <p>‘Maybe I
-                could make you one,’ said <persName key="Queenie">Queenie</persName>, with her head in the fridge. ‘I want a Coke, do
+                could make you one,’ said <persName key="Queenie" ref="#Queenie">Queenie</persName>, with her head in the fridge. ‘I want a Coke, do
                 you? I just go to this place they sell remnants. I made this whole dress for around
                 three dollars. What size are you now, anyway?’</p>
         <p>‘Fourteen,’
@@ -300,10 +327,10 @@
         <p>My father
                 said, ‘That’s different’.</p>
         <p>He was
-                wrong about everything. We did not seem anywhere near the same age, because <persName key="Queenie">Queenie</persName>
-                was nine, when my father married <persName key="Bet">Bet</persName>, and I was six. Though later, after I had
-                skipped a grade and <persName key="Queenie">Queenie</persName> had failed one, we came closer together in school.
-                And I never knew anyone to try to be mean to <persName key="Queenie">Queenie</persName>. She was somebody
+                wrong about everything. We did not seem anywhere near the same age, because <persName key="Queenie" ref="#Queenie">Queenie</persName>
+                was nine, when my father married <persName key="Bet" ref="#Bet">Bet</persName>, and I was six. Though later, after I had
+                skipped a grade and <persName key="Queenie" ref="#Queenie">Queenie</persName> had failed one, we came closer together in school.
+                And I never knew anyone to try to be mean to <persName key="Queenie" ref="#Queenie">Queenie</persName>. She was somebody
                 everybody wanted to be friends with. She was chosen first for a baseball team
                 even though she was a careless baseball player, and first for a spelling
                 team though she was a poor speller. Also, she and I did not get into fights.
@@ -313,17 +340,17 @@
                 not been kind. But for a pretty girl she had an extraordinarily sweet
             nature.</p>
         <p>As soon as
-                I woke up on the morning of <persName key="Queenie">Queenie</persName>’s disappearance, that morning in early winter, I
+                I woke up on the morning of <persName key="Queenie" ref="#Queenie">Queenie</persName>’s disappearance, that morning in early winter, I
                 felt her absence.</p>
         <p>It was
                 still dark, between six and seven o’clock. The house was cold. I pulled on the big
-                woolly brown bathrobe that <persName key="Queenie">Queenie</persName> and I shared. We called it <persName key="Buffalo Bill">Buffalo Bill</persName> and
+                woolly brown bathrobe that <persName key="Queenie" ref="#Queenie">Queenie</persName> and I shared. We called it <persName key="Buffalo Bill">Buffalo Bill</persName> and
                 whichever of us got out of bed first in the morning would grab it. A mystery
-                where it came from. ‘Maybe a friend of <persName key="Bet">Bet</persName>’s before she married your Dad,’
-                <persName key="Queenie">Queenie</persName> said. ‘But don’t say anything, she’d kill me.’</p>
+                where it came from. ‘Maybe a friend of <persName key="Bet" ref="#Bet">Bet</persName>’s before she married your Dad,’
+                <persName key="Queenie" ref="#Queenie">Queenie</persName> said. ‘But don’t say anything, she’d kill me.’</p>
         <p>Her bed was
                 empty and she wasn’t in the bathroom. I went down the stairs not turning any lights
-                on, not wanting to wake <persName key="Bet">Bet</persName>. I looked out the little window in the front door. The
+                on, not wanting to wake <persName key="Bet" ref="#Bet">Bet</persName>. I looked out the little window in the front door. The
                 hard pavement, the sidewalk, and the flat grass in the front yard all
                 glittering with frost. The snow was late. I turned up the hall thermostat and
                 the furnace rolled over in the dark, gave its reliable growl. We had just got
@@ -339,22 +366,22 @@
                 him, of engines and tobacco. Reading and wakeful till all hours and alert all
                 through his sleep.</p>
         <p>Even so, he
-                hadn’t heard <persName key="Queenie">Queenie</persName>. He said she must be somewhere in the house. ‘Did you look in
+                hadn’t heard <persName key="Queenie" ref="#Queenie">Queenie</persName>. He said she must be somewhere in the house. ‘Did you look in
                 the bathroom?’</p>
         <p>I said,
                 ‘She’s not there.’</p>
         <p>‘Maybe in
                 with her mother. Case of the heebie-jeebies.’</p>
         <p>My father
-                called it the heebie-jeebies when <persName key="Bet">Bet</persName> woke up - or didn’t quite wake up - from a bad
+                called it the heebie-jeebies when <persName key="Bet" ref="#Bet">Bet</persName> woke up - or didn’t quite wake up - from a bad
                 dream. She would come blundering out of her room unable to say what had frightened
-                her, and <persName key="Queenie">Queenie</persName> had to be the one to guide her back to bed. <persName key="Queenie">Queenie</persName> would curl
-                against her back making comforting noises like a puppy lapping milk, and <persName key="Bet">Bet</persName>
+                her, and <persName key="Queenie" ref="#Queenie">Queenie</persName> had to be the one to guide her back to bed. <persName key="Queenie" ref="#Queenie">Queenie</persName> would curl
+                against her back making comforting noises like a puppy lapping milk, and <persName key="Bet" ref="#Bet">Bet</persName>
                 would not remember anything in the morning.</p>
         <p>I had
                 turned the kitchen light on.</p>
         <p>‘I didn’t
-                want to wake her,’ I said. ‘<persName key="Bet">Bet</persName>.’</p>
+                want to wake her,’ I said. ‘<persName key="Bet" ref="#Bet">Bet</persName>.’</p>
         <p>I looked at
                 the rusty-bottomed bread tin swiped too often by the dishcloth, and the pots sitting
                 on the stove, washed but not put away, and the motto supplied by Fairholme Dairy:
@@ -364,63 +391,63 @@
         <p>The door to
                 the side porch had been unlocked.</p>
         <p>‘Somebody
-                came in,’ I said. ‘Somebody came in and took <persName key="Queenie">Queenie</persName>.’</p>
+                came in,’ I said. ‘Somebody came in and took <persName key="Queenie" ref="#Queenie">Queenie</persName>.’</p>
         <p>My father
-                came out with his trousers on over his long underwear. <persName key="Bet">Bet</persName> was slapping downstairs
+                came out with his trousers on over his long underwear. <persName key="Bet" ref="#Bet">Bet</persName> was slapping downstairs
                 in her slippers and her chenille robe, flicking on lights as she came.</p>
-        <p>‘<persName key="Queenie">Queenie</persName>
+        <p>‘<persName key="Queenie" ref="#Queenie">Queenie</persName>
                 not in with you?’ my father said. To me he said, ‘The door had to’ve been unlocked
                 from the inside.’</p>
-        <p><persName key="Bet">Bet</persName> said,
-                ‘What’s this about <persName key="Queenie">Queenie</persName>?’</p>
+        <p><persName key="Bet" ref="#Bet">Bet</persName> said,
+                ‘What’s this about <persName key="Queenie" ref="#Queenie">Queenie</persName>?’</p>
         <p>‘She might
                 just have felt like a walk,’ my father said.</p>
-        <p><persName key="Bet">Bet</persName> ignored
+        <p><persName key="Bet" ref="#Bet">Bet</persName> ignored
                 this. She had a mask of some pink stuff dried on her face. She never sold any
                 cosmetic she had not tried on herself.</p>
         <p>‘You get
                 over to <persName key="Vorguilla">Vorguilla</persName>’s,’ she said to me. ‘She might’ve thought of something she was
                 supposed to do over there.’</p>
         <p>This was a
-                week or so after <persName key="Mrs Vorguilla">Mrs Vorguilla</persName>’s funeral, but <persName key="Queenie">Queenie</persName> had
-                kept on working there, helping to box up dishes and linens so that <persName key="Mr Vorguilla">Mr Vorguilla</persName>
+                week or so after <persName key="Mrs Vorguilla">Mrs Vorguilla</persName>’s funeral, but <persName key="Queenie" ref="#Queenie">Queenie</persName> had
+                kept on working there, helping to box up dishes and linens so that <persName key="Mr Vorguilla" ref="#Stan">Mr Vorguilla</persName>
                 could move into an apartment. He had the Christmas concerts to get ready for
-                and could not do all the packing himself. <persName key="Bet">Bet</persName> wanted <persName key="Queenie">Queenie</persName> to just quit, so
+                and could not do all the packing himself. <persName key="Bet" ref="#Bet">Bet</persName> wanted <persName key="Queenie" ref="#Queenie">Queenie</persName> to just quit, so
                 that she could get taken on for Christmas help at one of the stores.</p>
         <p>I put on my
                 father’s rubber boots that were by the door, instead of going upstairs for my shoes.
                 I stumbled across the yard to the <persName key="Vorguillas">Vorguillas</persName>’ porch and rang the bell. It was a
                 chime that seemed to proclaim the musicality of the household. I hugged Buffalo
-                Bill tight around me and prayed. Oh, <persName key="Queenie">Queenie</persName>, <persName key="Queenie">Queenie</persName>, turn the lights on. I
-                forgot that if <persName key="Queenie">Queenie</persName> was working in there, the lights would be on
+                Bill tight around me and prayed. Oh, <persName key="Queenie" ref="#Queenie">Queenie</persName>, <persName key="Queenie" ref="#Queenie">Queenie</persName>, turn the lights on. I
+                forgot that if <persName key="Queenie" ref="#Queenie">Queenie</persName> was working in there, the lights would be on
                 already.</p>
         <p>No answer.
-                I pounded on the wood. <persName key="Mr Vorguilla">Mr Vorguilla</persName> was going to be in a bad temper when I finally
+                I pounded on the wood. <persName key="Mr Vorguilla" ref="#Stan">Mr Vorguilla</persName> was going to be in a bad temper when I finally
                 woke him. I pressed my head to the door, listening for stirrings.</p>
-        <p><persName key="Mr Vorguilla">‘Mr Vorguilla</persName>. <persName key="Mr Vorguilla">Mr Vorguilla</persName>. I’m sorry to wake you, <persName key="Mr Vorguilla">Mr Vorguilla</persName>. Is anybody
+        <p><persName key="Mr Vorguilla" ref="#Stan">‘Mr Vorguilla</persName>. <persName key="Mr Vorguilla" ref="#Stan">Mr Vorguilla</persName>. I’m sorry to wake you, <persName key="Mr Vorguilla" ref="#Stan">Mr Vorguilla</persName>. Is anybody
                 home?’</p>
         <p>A window
-                was heaved up in the house on the other side of the Vorguillas’. Mr <persName key="Hovey">Hovey</persName>, an old
+                was heaved up in the house on the other side of the Vorguillas’. <persName key="Mr Hovey" ref="#Hovey">Mr Hovey</persName>, an old
                 bachelor, lived there with his sister.</p>
         <p>‘Use your
-                eyes,’ Mr <persName key="Hovey">Hovey</persName> called down. ‘Look in the driveway.’</p>
-          <p><persName key="Mr Vorguilla">Mr Vorguilla’s</persName> car was gone.</p>
-          <p><persName key="Mr Hovey">Mr Hovey</persName>
+                eyes,’ <persName key="Mr Hovey" ref="#Hovey">Mr Hovey</persName> called down. ‘Look in the driveway.’</p>
+          <p><persName key="Mr Vorguilla" ref="#Stan">Mr Vorguilla’s</persName> car was gone.</p>
+          <p><persName key="Mr Hovey" ref="#Hovey">Mr Hovey</persName>
                 slammed down the window.</p>
         <p>When I
-                opened our kitchen door I saw my father and <persName key="Bet">Bet</persName> sitting at the table with cups of
+                opened our kitchen door I saw my father and <persName key="Bet" ref="#Bet">Bet</persName> sitting at the table with cups of
                 tea in front of them. For a minute I thought that order had been restored. There had
                 been a phone call, perhaps, with some pacifying news.</p>
-          <p>‘<persName key="Mr Vorguilla">Mr Vorguilla</persName> isn’t there,’ I said. ‘His car’s gone.’</p>
+          <p>‘<persName key="Mr Vorguilla" ref="#Stan">Mr Vorguilla</persName> isn’t there,’ I said. ‘His car’s gone.’</p>
         <p>‘Oh, we know
-                that,’ <persName key="Bet">Bet</persName> said. ‘We know all about that.’</p>
+                that,’ <persName key="Bet" ref="#Bet">Bet</persName> said. ‘We know all about that.’</p>
         <p>My father said, ‘Look at here,’ and pushed a
                 piece of paper across the table.</p>
-        <p>‘I am going to marry <persName key="Mr Vorguilla">Mr Vorguilla</persName>,’ it said.
-                ‘Yours truly, <persName key="Queenie">Queenie</persName>.’</p>
+        <p>‘I am going to marry <persName key="Mr Vorguilla" ref="#Stan">Mr Vorguilla</persName>,’ it said.
+                ‘Yours truly, <persName key="Queenie" ref="#Queenie">Queenie</persName>.’</p>
         <p>‘Underneath the sugar bowl,’ said my
                 father.</p>
-        <p><persName key="Bet">Bet</persName> dropped her spoon.</p>
+        <p><persName key="Bet" ref="#Bet">Bet</persName> dropped her spoon.</p>
         <p>‘I want him prosecuted,’ she shouted. ‘I want
                 her in reform school. I want the police.’</p>
         <p>My father
@@ -434,7 +461,7 @@
             care.’</p>
         <p>My father
                 said, ‘That’s enough.’</p>
-        <p><persName key="Queenie">Queenie</persName>
+        <p><persName key="Queenie" ref="#Queenie">Queenie</persName>
                 brought me a couple of 222s to
                 take with my Coke. ‘It’s amazing how your cramps clear up,’ she said. ‘It’s a
                 benefit of being married.’</p>
@@ -442,29 +469,29 @@
                 went and told you,’ she said. ‘He told you about us.’</p>
         <p>When I told
                 my father I wanted to get a summer job, before entering <orgName key="Teachers’ College">Teachers’ College</orgName> in the
-                fall, he had said that maybe I should go to <placeName key="Toronto">Toronto</placeName> and look up <persName key="Queenie">Queenie</persName>. He told me
+                fall, he had said that maybe I should go to <placeName key="Toronto">Toronto</placeName> and look up <persName key="Queenie" ref="#Queenie">Queenie</persName>. He told me
                 that she had written to him in care of his trucking business, asking if he
                 could let them have some money to tide them over the winter.</p>
         <p>‘I would’ve
-                never had to write to him,’ <persName key="Queenie">Queenie</persName> said, ‘if <persName key="Stan">Stan</persName> hadn’t got sick last year with
+                never had to write to him,’ <persName key="Queenie" ref="#Queenie">Queenie</persName> said, ‘if <persName key="Stan" ref="#Stan">Stan</persName> hadn’t got sick last year with
                 pneumonia.’</p>
         <p>I said, ‘It
                 was the first I knew where you were.’ Tears came into my eyes, I didn’t know why.
                 Because I’d felt so happy when I found out, so lonely before I found out, because I
                 wished right now that she would say, ‘Of course, I always meant to get in touch
                 with you,’ and she didn’t say it.</p>
-        <p>‘<persName key="Bet">Bet</persName>
+        <p>‘<persName key="Bet" ref="#Bet">Bet</persName>
                 doesn’t know,’ I said. ‘She thinks I’m on my own.’</p>
         <p>‘I hope
-                not,’ <persName key="Queenie">Queenie</persName> said. ‘I mean I hope she doesn’t know.’</p>
+                not,’ <persName key="Queenie" ref="#Queenie">Queenie</persName> said. ‘I mean I hope she doesn’t know.’</p>
         <p>I had a lot
                 of things to tell her, about home. I told her that the trucking firm had gone from
-                three vehicles to a dozen, and that <persName key="Bet">Bet</persName> had bought a muskrat coat and expanded her
+                three vehicles to a dozen, and that <persName key="Bet" ref="#Bet">Bet</persName> had bought a muskrat coat and expanded her
                 business, holding <orgName key="Beauty Clinics">Beauty Clinics</orgName> now in our house. She had fixed over the room
                 where my father used to sleep for these purposes, and he had moved his cot and
                 the <name>National Geographics</name> to his office - an air force billet he had towed to the trucking
                 yard. Sitting at the kitchen table studying for my Senior Matric I had listened
-                to <persName key="Bet">Bet</persName> say, ‘A skin this delicate, you should never go near it with a washcloth,’
+                to <persName key="Bet" ref="#Bet">Bet</persName> say, ‘A skin this delicate, you should never go near it with a washcloth,’
                 prior to loading up some raw-faced woman with lotions and creams. And sometimes
                 in a no less intense, but less hopeful tone, ‘I’m telling you I had Evil, I had
                 Evil living right next door to me and I never suspected it, because you don’t,
@@ -480,34 +507,34 @@
                 come back from seeing the woman to the door and say. ‘Touch her face in the dark and
                 you’d never know the difference from sandpaper, what can
                 I do?’</p>
-        <p><persName key="Queenie">Queenie</persName>
+        <p><persName key="Queenie" ref="#Queenie">Queenie</persName>
                 didn’t seem interested in hearing about these things. And there was not much time
                 anyway. Before we had finished our Cokes there were
-                quick hard steps on the gravel and <persName key="Mr Vorguilla">Mr Vorguilla</persName> came into the
+                quick hard steps on the gravel and <persName key="Mr Vorguilla" ref="#Stan">Mr Vorguilla</persName> came into the
             kitchen.</p>
         <p>‘So look
-                who’s here,’ cried <persName key="Queenie">Queenie</persName>. She half got up, as if to touch him, but he veered
+                who’s here,’ cried <persName key="Queenie" ref="#Queenie">Queenie</persName>. She half got up, as if to touch him, but he veered
                 toward the sink.</p>
         <p>Her voice
                 was full of such laughing surprise that I wondered if he had been told anything
                 about my letter or the fact that I was on my way.</p>
         <p>‘It’s
-                <persName key="Chrissy">Chrissy</persName>,’ she said.</p>
+                <persName key="Chrissy" ref="#Chrissy">Chrissy</persName>,’ she said.</p>
         <p>‘So I see,’
-            said <persName key="Mr Vorguilla">Mr Vorguilla</persName>. ‘You must like hot weather, <persName key="Chrissy">Chrissy</persName>, if you come to <placeName key="Toronto">Toronto</placeName> in
+            said <persName key="Mr Vorguilla" ref="#Stan">Mr Vorguilla</persName>. ‘You must like hot weather, <persName key="Chrissy" ref="#Chrissy">Chrissy</persName>, if you come to <placeName key="Toronto">Toronto</placeName> in
                 the summer.’</p>
         <p>‘She’s
-                going to look for a job,’ said <persName key="Queenie">Queenie</persName>.</p>
+                going to look for a job,’ said <persName key="Queenie" ref="#Queenie">Queenie</persName>.</p>
         <p>‘And do you
-            have some qualifications,’ <persName key="Mr Vorguilla">Mr Vorguilla</persName> said. ‘Do you have qualifications for
+            have some qualifications,’ <persName key="Mr Vorguilla" ref="#Stan">Mr Vorguilla</persName> said. ‘Do you have qualifications for
                 finding a job in <placeName key="Toronto">Toronto</placeName>?’</p>
-        <p><persName key="Queenie">Queenie</persName>
+        <p><persName key="Queenie" ref="#Queenie">Queenie</persName>
                 said, ‘She’s got her Senior Matric’.</p>
         <p>‘Well let’s
-            hope that’s good enough,’ said <persName key="Mr Vorguilla">Mr Vorguilla</persName>. He ran a glass of water and drank it
+            hope that’s good enough,’ said <persName key="Mr Vorguilla" ref="#Stan">Mr Vorguilla</persName>. He ran a glass of water and drank it
                 all down, standing with his back to us. Exactly as he used to do when <persName key="Mrs Vorguilla">Mrs Vorguilla</persName>
-                and <persName key="Queenie">Queenie</persName> and I were sitting at the kitchen table in that other house, the
-            <persName key="Vorguillas">Vorguillas</persName>’ house next door. <persName key="Mr Vorguilla">Mr Vorguilla</persName> would come in from a practice
+                and <persName key="Queenie" ref="#Queenie">Queenie</persName> and I were sitting at the kitchen table in that other house, the
+            <persName key="Vorguillas">Vorguillas</persName>’ house next door. <persName key="Mr Vorguilla" ref="#Stan">Mr Vorguilla</persName> would come in from a practice
                 somewhere, or he would be taking a break from teaching a piano lesson in the
                 front room. At the sound of his steps <persName key="Mrs Vorguilla">Mrs Vorguilla</persName> would have given us a
                 warning smile. And we all looked down at our Scrabble letters, giving him the
@@ -528,21 +555,21 @@
                 with ladies. They knitted him things at Christmas. Socks and mufflers and mitts
                 to keep him warm on his trips between school and school and choir and
                 choir.</p>
-        <p>When <persName key="Queenie">Queenie</persName> had the run of the house, after <persName key="Mrs Vorguilla">Mrs Vorguilla</persName>
+        <p>When <persName key="Queenie" ref="#Queenie">Queenie</persName> had the run of the house, after <persName key="Mrs Vorguilla">Mrs Vorguilla</persName>
                 got too sick to manage, she fished out of a drawer a knitted object that she flapped
                 in front of my face. It had arrived without the name of its donor.</p>
         <p>‘It’s a
-                peter-heater,’ <persName key="Queenie">Queenie</persName> said. ‘<persName key="Mrs Vorguilla">Mrs Vorguilla</persName> said don’t show it to him, he would just
+                peter-heater,’ <persName key="Queenie" ref="#Queenie">Queenie</persName> said. ‘<persName key="Mrs Vorguilla">Mrs Vorguilla</persName> said don’t show it to him, he would just
                 get mad. Don’t you know what a peter-heater is?’</p>
         <p>I said,
                 ‘Ugh.’ ‘It’s just a joke, she said.</p>
         <p>Both
-            <persName key="Queenie">Queenie</persName> and <persName key="Mr Vorguilla">Mr Vorguilla</persName> had to go out to work in the evenings. <persName key="Mr Vorguilla">Mr
-                Vorguilla</persName> played the piano in a restaurant. He wore a tuxedo. And <persName key="Queenie">Queenie</persName> had a job
+            <persName key="Queenie" ref="#Queenie">Queenie</persName> and <persName key="Mr Vorguilla" ref="#Stan">Mr Vorguilla</persName> had to go out to work in the evenings. <persName key="Mr Vorguilla" ref="#Stan">Mr
+                Vorguilla</persName> played the piano in a restaurant. He wore a tuxedo. And <persName key="Queenie" ref="#Queenie">Queenie</persName> had a job
                 selling tickets in a movie theatre. The theatre was just a few blocks away, so
                 I walked there with her. And when I saw her sitting in the ticket-booth I
                 understood that the make-up and the dyed puffed hair
-                and the hoop earrings were not so strange after all. <persName key="Queenie">Queenie</persName> looked like some
+                and the hoop earrings were not so strange after all. <persName key="Queenie" ref="#Queenie">Queenie</persName> looked like some
                 of the girls passing on the street or going in to see the movie with their
                 boyfriends. And she looked very much like some of the girls portrayed in the
                 posters that surrounded her. She looked to be connected to the world of drama,
@@ -556,14 +583,14 @@
                 couldn’t imagine sitting in a cafe drinking coffee and advertising to the world that
                 I had nothing to do and no place to go. Or going into a store and trying on
                 clothes that I had no hope of buying. I climbed the hill again. I waved hello
-                to the Greek woman calling out her window. I let myself in with <persName key="Queenie">Queenie</persName>’s
+                to the Greek woman calling out her window. I let myself in with <persName key="Queenie" ref="#Queenie">Queenie</persName>’s
                 key.</p>
         <p>I sat on
                 the cot in the sun porch. There was nowhere to hang up the clothes I had brought and
-                I thought it might not be such a good idea to unpack, anyway. <persName key="Mr Vorguilla">Mr Vorguilla</persName> might not
+                I thought it might not be such a good idea to unpack, anyway. <persName key="Mr Vorguilla" ref="#Stan">Mr Vorguilla</persName> might not
                 like to see any sign that I was staying.</p>
         <p>I thought
-            that <persName key="Mr Vorguilla">Mr Vorguilla</persName>’s looks had changed, just as <persName key="Queenie">Queenie</persName>’s had. But his had not
+            that <persName key="Mr Vorguilla" ref="#Stan">Mr Vorguilla</persName>’s looks had changed, just as <persName key="Queenie" ref="#Queenie">Queenie</persName>’s had. But his had not
                 changed, as hers had, in the direction of what seemed to me a hard foreign glamour
                 and sophistication. His hair, which had been reddish-grey, was now quite grey,
                 and the expression of his face - always ready to flash with outrage at the
@@ -575,7 +602,7 @@
                 and walked around the apartment. You can never get a good look at the places people
                 live in while they are there.</p>
         <p>The kitchen
-                was the nicest room, though too dark. <persName key="Queenie">Queenie</persName> had ivy growing up around the window
+                was the nicest room, though too dark. <persName key="Queenie" ref="#Queenie">Queenie</persName> had ivy growing up around the window
                 over the sink, and she had wooden spoons sticking up out of a pretty, handleless
                 mug, just the way <persName key="Mrs Vorguilla">Mrs Vorguilla</persName> used to have them. The living-room had the
                 piano in it, the same piano that had been in the other living-room. There was
@@ -583,7 +610,7 @@
                 and a lot of records sitting on the floor. No television. No
                 walnut rocking-chairs or tapestry curtains. Not even the floor-lamp with the Japanese scenes on its parchment
                 shade. Yet all these things had been moved to <placeName key="Toronto">Toronto</placeName>, on a snowy day. I had
-                been home at lunchtime and had seen the moving-truck. <persName key="Bet">Bet</persName> couldn’t move from
+                been home at lunchtime and had seen the moving-truck. <persName key="Bet" ref="#Bet">Bet</persName> couldn’t move from
                 the front door. Finally she forgot all the dignity she usually liked to show to
                 strangers and opened the door and yelled at the moving-men, ‘You go back to
                 <placeName key="Toronto">Toronto</placeName> and tell him if he ever shows his face around here again he’ll wish he
@@ -593,8 +620,8 @@
                 were. Moving furniture must expose you to a lot of ranting and raging.</p>
         <p>But where
                 had everything gone? Sold, I thought. It must have been sold. My father had said
-                that it sounded as if <persName key="Mr Vorguilla">Mr Vorguilla</persName> was having a hard time getting going down in
-                <placeName key="Toronto">Toronto</placeName>, in his line of work. And <persName key="Queenie">Queenie</persName> had said something about ‘getting
+                that it sounded as if <persName key="Mr Vorguilla" ref="#Stan">Mr Vorguilla</persName> was having a hard time getting going down in
+                <placeName key="Toronto">Toronto</placeName>, in his line of work. And <persName key="Queenie" ref="#Queenie">Queenie</persName> had said something about ‘getting
                 behind’. She would never have written to my father if they hadn’t gotten
                 behind.</p>
         <p>They must
@@ -619,34 +646,34 @@
                 the sort of thing that really grown-up people took an interest in? Even the
                 design on the cover, the pretty vines all curved and twisted, seemed slightly
                 hostile and mocking. I picked the book up to put it back in its place and it
-                fell open to show the names on the fly-leaf. <persName key="Stan">Stan</persName> and <persName key="Marigold Vorguilla">Marigold Vorguilla</persName>. In a
-                feminine handwriting. <persName key="Stan">Stan</persName> and <persName>Marigold</persName>.</p>
+                fell open to show the names on the fly-leaf. <persName key="Stan" ref="#Stan">Stan</persName> and <persName key="Marigold Vorguilla" ref="#Marigold">Marigold Vorguilla</persName>. In a
+            feminine handwriting. <persName key="Stan" ref="#Stan">Stan</persName> and <persName key="Marigold Vorguilla" ref="#Marigold">Marigold</persName>.</p>
         <p>I thought
                 of <persName key="Mrs Vorguilla">Mrs Vorguilla</persName>’s high white forehead and tight little grey-black curls. Her
                 pearl-button earrings and blouses that tied with a bow at the neck. She was taller
-                by quite a bit than <persName key="Mr Vorguilla">Mr Vorguilla</persName> and people thought that was why they did not
+                by quite a bit than <persName key="Mr Vorguilla" ref="#Stan">Mr Vorguilla</persName> and people thought that was why they did not
                 go out together. But it was really because she got out of breath. She got out
                 of breath walking upstairs, or hanging the clothes on the line. And finally she
                 got out of breath even sitting at the table playing Scrabble.</p>
         <p>At first my
                 father would not let us take any money for fetching her groceries or hanging up her
                 washing - he said it was only neighbourly.</p>
-        <p><persName key="Bet">Bet</persName> said
+        <p><persName key="Bet" ref="#Bet">Bet</persName> said
                 she thought she would try laying around and see if people would come and wait on her
                 for nothing.</p>
-          <p>Then <persName key="Mr Vorguilla">Mr
-                Vorguilla</persName> came over and negotiated for <persName key="Queenie">Queenie</persName> to go and work for them. <persName key="Queenie">Queenie</persName>
+          <p>Then <persName key="Mr Vorguilla" ref="#Stan">Mr
+                Vorguilla</persName> came over and negotiated for <persName key="Queenie" ref="#Queenie">Queenie</persName> to go and work for them. <persName key="Queenie" ref="#Queenie">Queenie</persName>
                 wanted to go because she had failed her year at high school and didn’t want to
-                repeat it. At last <persName key="Bet">Bet</persName> said all right, but told her she was not to do any
+                repeat it. At last <persName key="Bet" ref="#Bet">Bet</persName> said all right, but told her she was not to do any
                 nursing.</p>
         <p>‘If he’s
                 too cheap to hire a nurse that’s not your lookout.’</p>
-        <p><persName key="Queenie">Queenie</persName>
-            said that <persName key="Mr Vorguilla">Mr Vorguilla</persName> put out the pills every morning and gave <persName key="Mrs Vorguilla">Mrs Vorguilla</persName> a
+        <p><persName key="Queenie" ref="#Queenie">Queenie</persName>
+            said that <persName key="Mr Vorguilla" ref="#Stan">Mr Vorguilla</persName> put out the pills every morning and gave <persName key="Mrs Vorguilla">Mrs Vorguilla</persName> a
                 sponge-bath every evening. He even tried to wash her sheets in the bathtub as if
                 there was not such a thing as a washing-machine in the house.</p>
         <p>I thought
-            of the times when we would be playing Scrabble in the kitchen and <persName key="Mr Vorguilla">Mr Vorguilla</persName> after
+            of the times when we would be playing Scrabble in the kitchen and <persName key="Mr Vorguilla" ref="#Stan">Mr Vorguilla</persName> after
                 drinking his glass of water would put a hand on <persName key="Mrs Vorguilla">Mrs Vorguilla</persName>’s shoulder and sigh,
                 as if he had come back from a long wearying journey.</p>
         <p>‘Hello
@@ -655,9 +682,9 @@
         <p>‘Hello pet,’
                 she would say.</p>
         <p>Then he
-                would look at us, at <persName key="Queenie">Queenie</persName> and me, as if our presence did not absolutely
+                would look at us, at <persName key="Queenie" ref="#Queenie">Queenie</persName> and me, as if our presence did not absolutely
                 offend him. ‘Hello you two.’</p>
-        <p>Later on <persName key="Queenie">Queenie</persName> and I would giggle in our
+        <p>Later on <persName key="Queenie" ref="#Queenie">Queenie</persName> and I would giggle in our
                 beds in the dark.</p>
         <p>‘Goodnight pet.’</p>
         <p>‘Goodnight pet.’</p>
@@ -667,14 +694,14 @@
                 for going to the bathroom in the
                 morning and sneaking out to put my pad in the garbage pail, I sat on my made-up cot
                 in the sun porch until Mr <persName key="Vorguilla">Vorguilla</persName> was out of the house. I was afraid he might
-                not have any place to go but apparently he did. As soon as he was gone <persName key="Queenie">Queenie</persName>
+                not have any place to go but apparently he did. As soon as he was gone <persName key="Queenie" ref="#Queenie">Queenie</persName>
                 called to me. She had set out a peeled orange and cornflakes and coffee.</p>
         <p>‘And here’s
                 the paper,’ she said. ‘I was looking at the Help Wanteds. First though I want to do
                 something with your hair. I want to cut some off the back and I want to do it up in
                 rollers, okay with you?’</p>
         <p>I said
-                okay. Even while I was eating <persName key="Queenie">Queenie</persName> kept circling me and looking at me, trying to
+                okay. Even while I was eating <persName key="Queenie" ref="#Queenie">Queenie</persName> kept circling me and looking at me, trying to
                 work out her idea. Then she got me up on a stool - I was still drinking my
                 coffee - and she began to comb and snip.</p>
         <p>‘What kind
@@ -703,27 +730,27 @@
                 custom.</p>
         <p>She wanted
                 to have a party but she didn’t know who to ask. There were the Greek people, and
-                <persName key="Stan">Stan</persName> had a couple of friends. Then she got the idea of asking his
+                <persName key="Stan" ref="#Stan">Stan</persName> had a couple of friends. Then she got the idea of asking his
             students.</p>
         <p>I still
-                couldn’t get used to her saying ‘<persName key="Stan">Stan</persName>’. It wasn’t just the reminder of her intimacy
-            with <persName key="Mr Vorguilla">Mr Vorguilla</persName>. It was that, of course. But it was also the feeling it gave, that
-                she had made him up from scratch. A new person. <persName key="Stan">Stan</persName>. As if there had never
-            been a <persName key="Mr Vorguilla">Mr Vorguilla</persName>, that we had known together - let alone a <persName key="Mrs Vorguilla">Mrs Vorguilla</persName> -
+                couldn’t get used to her saying ‘<persName key="Stan" ref="#Stan">Stan</persName>’. It wasn’t just the reminder of her intimacy
+            with <persName key="Mr Vorguilla" ref="#Stan">Mr Vorguilla</persName>. It was that, of course. But it was also the feeling it gave, that
+                she had made him up from scratch. A new person. <persName key="Stan" ref="#Stan">Stan</persName>. As if there had never
+            been a <persName key="Mr Vorguilla" ref="#Stan">Mr Vorguilla</persName>, that we had known together - let alone a <persName key="Mrs Vorguilla">Mrs Vorguilla</persName> -
                 in the first place.</p>
-        <p><persName key="Stan">Stan</persName>’s
+        <p><persName key="Stan" ref="#Stan">Stan</persName>’s
                 students were all adults by that time - he really preferred adults to schoolchildren
                 - so they didn’t have to worry about the sort of games and entertainment you plan
                 for children. They held the party on a Sunday evening, because all the other
-                evenings were taken up with <persName key="Stan">Stan</persName>’s work at the restaurant and <persName key="Queenie">Queenie</persName>’s at the
+                evenings were taken up with <persName key="Stan" ref="#Stan">Stan</persName>’s work at the restaurant and <persName key="Queenie" ref="#Queenie">Queenie</persName>’s at the
                 theatre.</p>
-        <p>The Greeks brought wine they had made and some of the
+              <p>The <persName>Greeks</persName> brought wine they had made and some of the
                 students brought eggnog mix and rum and sherry. And some brought records you could
-                dance to. They had thought that <persName key="Stan">Stan</persName> wouldn’t have any records of that kind of
+                dance to. They had thought that <persName key="Stan" ref="#Stan">Stan</persName> wouldn’t have any records of that kind of
                 music and they were right.</p>
-        <p><persName key="Queenie">Queenie</persName>
+        <p><persName key="Queenie" ref="#Queenie">Queenie</persName>
                 made sausage-rolls and gingerbread and the Greek woman brought her own kind of
-                cookies. Everything was good. The party was a success. <persName key="Queenie">Queenie</persName> danced with a Chinese
+                cookies. Everything was good. The party was a success. <persName key="Queenie" ref="#Queenie">Queenie</persName> danced with a Chinese
                 boy named <persName key="Andrew">Andrew</persName>, who had brought a record she loved.</p>
         <p>‘Turn,
                 turn, turn,’ she said, and I moved my head as directed. She laughed and said, ‘No,
@@ -732,43 +759,43 @@
         <p>‘Turn,
                 turn, turn,’ she sang. ‘To everything, there is a season -’</p>
         <p><persName key="Andrew">Andrew</persName> was
-                a dentistry student. But he wanted to learn to play the Moonlight Sonata. <persName key="Stan">Stan</persName> said
-                that was going to take him a long time. <persName key="Andrew">Andrew</persName> was patient. He told <persName key="Queenie">Queenie</persName> that he
+                a dentistry student. But he wanted to learn to play the Moonlight Sonata. <persName key="Stan" ref="#Stan">Stan</persName> said
+                that was going to take him a long time. <persName key="Andrew">Andrew</persName> was patient. He told <persName key="Queenie" ref="#Queenie">Queenie</persName> that he
                 could not afford to go home for Christmas. His home was in <placeName key="Northern Ontario">Northern Ontario</placeName>.</p>
         <p>‘I thought
                 he was from <placeName key="China">China</placeName>,’ I said.</p>
         <p>‘No, not Chinese Chinese. From here.’</p>
         <p>They did
                 play one children’s game. They played musical chairs. Everybody was boisterous by
-                that time. Even <persName key="Stan">Stan</persName>. He pulled <persName key="Queenie">Queenie</persName> down into his lap when she was running past,
+                that time. Even <persName key="Stan" ref="#Stan">Stan</persName>. He pulled <persName key="Queenie" ref="#Queenie">Queenie</persName> down into his lap when she was running past,
                 and he wouldn’t let her go. And then when everybody had gone he wouldn’t let
                 her clean up. He just wanted her to come to bed.</p>
         <p>‘You know
-                the way men are,’ <persName key="Queenie">Queenie</persName> said. ‘Do you have a boyfriend yet, or
+                the way men are,’ <persName key="Queenie" ref="#Queenie">Queenie</persName> said. ‘Do you have a boyfriend yet, or
             anything?’</p>
         <p>I said no. The last man my father had hired as a driver was
                 always coming to the house to deliver some unimportant message, and my father said,
-                ‘He just wants a chance to talk to <persName key="Chrissy">Chrissy</persName>.’ I was cool to him, however, and so
+                ‘He just wants a chance to talk to <persName key="Chrissy" ref="#Chrissy">Chrissy</persName>.’ I was cool to him, however, and so
                 far he hadn’t got up the nerve to ask me out. I didn’t want to go out with
                 anybody from home.</p>
         <p>‘So you
-                don’t really know about that stuff yet?’ said <persName key="Queenie">Queenie</persName>.</p>
+                don’t really know about that stuff yet?’ said <persName key="Queenie" ref="#Queenie">Queenie</persName>.</p>
         <p>I said, ‘Of
                 course I know.’</p>
         <p>‘You don’t sound like you do,’ she
                 said.</p>
         <p>The guests at the party had eaten up nearly
-                everything but the cake. They did not eat much of that but <persName key="Queenie">Queenie</persName> wasn’t offended.
+                everything but the cake. They did not eat much of that but <persName key="Queenie" ref="#Queenie">Queenie</persName> wasn’t offended.
                 It was very rich, and by the time they got to it they were filled up with
                 sausage-rolls and other things. Also, it had not had time to ripen the way the book
                 said it should, so she was just as glad to have some left over. She was
-                thinking, before <persName key="Stan">Stan</persName> pulled her away, that she should get the cake wrapped up
+                thinking, before <persName key="Stan" ref="#Stan">Stan</persName> pulled her away, that she should get the cake wrapped up
                 in a wine-soaked cloth and put it in a cool place.</p>
         <p>She was either thinking of doing that or she had actually
                 done it, and in the morning she saw that the cake was not on the table so she
                 thought she had done it. She thought good, the cake was put away.</p>
         <p>A day or so
-                later <persName key="Stan">Stan</persName> said, ‘Let’s have a piece of that cake.’ She said oh, let it ripen a bit
+                later <persName key="Stan" ref="#Stan">Stan</persName> said, ‘Let’s have a piece of that cake.’ She said oh, let it ripen a bit
                 more, but he insisted. She went to the cupboard and then to the refrigerator, but it
                 was not there. She looked high and low and she could not find it. She thought
                 back to seeing it on the table. And a memory came to her, of getting a clean
@@ -782,9 +809,9 @@
                 she looked in the oven and even in insane places like her dresser drawers and under
                 the bed and on the closet shelf. It was nowhere.</p>
         <p>‘If you put
-                it somewhere, then it must be somewhere,’ <persName key="Stan">Stan</persName> said.</p>
+                it somewhere, then it must be somewhere,’ <persName key="Stan" ref="#Stan">Stan</persName> said.</p>
         <p>‘I did. I
-                put it somewhere,’ said <persName key="Queenie">Queenie</persName>.</p>
+                put it somewhere,’ said <persName key="Queenie" ref="#Queenie">Queenie</persName>.</p>
         <p>‘Maybe you
                 were drunk and you threw it out.’</p>
         <p>She said, ‘I wasn’t drunk. I didn’t throw it
@@ -795,15 +822,15 @@
                 the table watching her. If you put it somewhere it must be somewhere. She was
                 getting frantic.</p>
         <p>‘Are you
-                sure?’ said <persName key="Stan">Stan</persName>. ‘Are you sure you didn’t just give it away?’</p>
+                sure?’ said <persName key="Stan" ref="#Stan">Stan</persName>. ‘Are you sure you didn’t just give it away?’</p>
         <p>She was
                 sure. She was sure she hadn’t given it away. She had wrapped it up to keep. She was
                 sure, she was almost sure she had wrapped it to keep. She was sure she had not given
                 it away.</p>
         <p>‘Oh, I
-                don’t know about that,’ <persName key="Stan">Stan</persName> said. ‘I think maybe you gave it away. And I think I
+                don’t know about that,’ <persName key="Stan" ref="#Stan">Stan</persName> said. ‘I think maybe you gave it away. And I think I
                 know who to.’</p>
-        <p><persName key="Queenie">Queenie</persName> was
+        <p><persName key="Queenie" ref="#Queenie">Queenie</persName> was
                 brought to a standstill. Who to?</p>
         <p>‘I think
                 you gave it to <persName key="Andrew">Andrew</persName>.’</p>
@@ -815,36 +842,36 @@
         <p>‘So you gave
                 him our cake.’</p>
         <p>No, said
-                <persName key="Queenie">Queenie</persName>. Why would she do that? She would not do that. She had never thought of
+                <persName key="Queenie" ref="#Queenie">Queenie</persName>. Why would she do that? She would not do that. She had never thought of
                 giving <persName key="Andrew">Andrew</persName> the cake.</p>
-        <p><persName key="Stan">Stan</persName> said,
-                ‘<persName key="Lena">Lena</persName>. Don’t lie.’</p>
+        <p><persName key="Stan" ref="#Stan">Stan</persName> said,
+                ‘<persName key="Lena" ref="#Queenie">Lena</persName>. Don’t lie.’</p>
         <p>That was
-                the beginning of <persName key="Queenie">Queenie</persName>’s long miserable struggle. All she could say was no. No,
+                the beginning of <persName key="Queenie" ref="#Queenie">Queenie</persName>’s long miserable struggle. All she could say was no. No,
                 no, I did not give the cake to anybody. I did not give the cake to <persName key="Andrew">Andrew</persName>. I am not
                 lying. No. No.</p>
         <p>‘Probably
-                you were drunk,’ <persName key="Stan">Stan</persName> said. ‘You were drunk and you are not remembering very
+                you were drunk,’ <persName key="Stan" ref="#Stan">Stan</persName> said. ‘You were drunk and you are not remembering very
                 well.’</p>
-        <p><persName key="Queenie">Queenie</persName> said
+        <p><persName key="Queenie" ref="#Queenie">Queenie</persName> said
                 she was not drunk.</p>
         <p>‘You were the one who was drunk,’ she
                 said.</p>
         <p>He got up
                 and came at her with his hand raised, saying not to tell him that he’d been drunk,
                 never to tell him that.</p>
-        <p><persName key="Queenie">Queenie</persName>
+        <p><persName key="Queenie" ref="#Queenie">Queenie</persName>
                 cried out, ‘I won’t. I won’t. I’m sorry.’ And he didn’t hit her. But she began to
                 cry. She kept crying while she tried to persuade him. Why would she give away the
                 cake she had worked so hard to make? Why would he not believe her? Why would
                 she lie to him?</p>
         <p>‘Everybody
-                lies,’ <persName key="Stan">Stan</persName> said. And the more she cried and begged him to believe her, the more
+                lies,’ <persName key="Stan" ref="#Stan">Stan</persName> said. And the more she cried and begged him to believe her, the more
                 cool and sarcastic he became.</p>
         <p>‘Use a
                 little logic,’ he said. ‘If it’s here, get up and find it. If it isn’t here, then
                 you gave it away.’</p>
-        <p><persName key="Queenie">Queenie</persName>
+        <p><persName key="Queenie" ref="#Queenie">Queenie</persName>
                 said that wasn’t logic. It did not have to be given away, just because she could not
                 find it. Then he came close to her again in such a calm
                 half-smiling way that she thought for a moment he was going to kiss her.
@@ -856,16 +883,16 @@
                 went to get dressed to go and play at the restaurant.</p>
         <p>He stopped
                 speaking to her. He wrote her a note saying he would speak to her again when she
-                told the truth. All over Christmas she could not stop crying. She and <persName key="Stan">Stan</persName> were
+                told the truth. All over Christmas she could not stop crying. She and <persName key="Stan" ref="#Stan">Stan</persName> were
                 supposed to go and visit the Greek people on Christmas day but she couldn’t go,
-                her face was such a mess. <persName key="Stan">Stan</persName> had to go and say that she was sick. The Greek
+                her face was such a mess. <persName key="Stan" ref="#Stan">Stan</persName> had to go and say that she was sick. The Greek
                 people probably knew the truth anyway. They had probably heard the hullabaloo
                 through the walls.</p>
         <p>She put on
                 a ton of make-up and went to work and the manager said, ‘You want to give the people
                 the idea this is a tragedy?’ She said she had infected sinuses and he let her go
                 home.</p>
-        <p>When <persName key="Stan">Stan</persName>
+        <p>When <persName key="Stan" ref="#Stan">Stan</persName>
                 came home that night and pretended she didn’t exist she turned over and looked at
                 him. She knew that he would get into bed and lie beside her like a post and that if
                 she moved against him he would continue to lie like a post until she moved
@@ -892,7 +919,7 @@
         <p>‘To <persName key="Andrew">Andrew</persName>.
                 You gave it to <persName key="Andrew">Andrew</persName>.’</p>
         <p>Yes,
-                <persName key="Queenie">Queenie</persName> said. Yes, yes, that was what she had done. And she began to howl and hang
+                <persName key="Queenie" ref="#Queenie">Queenie</persName> said. Yes, yes, that was what she had done. And she began to howl and hang
                 on to him and beg him to forgive her.</p>
         <p>All right,
                 stop the hysterics, he said. He did not say that he forgave her but he got a warm
@@ -913,7 +940,7 @@
                 was a little drunk - she had to be. She had forgotten absolutely. And there it
                 was.</p>
         <p>She found
-                it, and she threw it all out. She never told <persName key="Stan">Stan</persName>.</p>
+                it, and she threw it all out. She never told <persName key="Stan" ref="#Stan">Stan</persName>.</p>
         <p>‘I pitched
                 it,’ she said. ‘It was just as good as ever and all that expensive fruit and stuff
                 in it but there was no way I wanted to get that subject brought up again. So I just
@@ -926,7 +953,7 @@
                 pull my head out of her hands and turn around and look at her.</p>
         <p>I said, ‘But
                 he was wrong.’ ‘Well of course he was wrong,’ she said. ‘Men are not normal,
-                <persName key="Chrissy">Chrissy</persName>. That’s one thing you’ll learn if you ever get married.’</p>
+                <persName key="Chrissy" ref="#Chrissy">Chrissy</persName>. That’s one thing you’ll learn if you ever get married.’</p>
         <p>‘I never
                 will then,’ I said. ‘I never will get married.’</p>
         <p>‘He was
@@ -934,25 +961,25 @@
         <p>‘Never,’ I
                 said.</p>
         <p>‘Well you
-                and me are very different, <persName key="Chrissy">Chrissy</persName>. Very different’.
+                and me are very different, <persName key="Chrissy" ref="#Chrissy">Chrissy</persName>. Very different’.
                 She sighed. She said, ‘I am a creature of love.’</p>
         <p>I thought
                 that you might see these words on a movie poster. A creature of love. Maybe on a
-                poster of one of the movies that had played at <persName key="Queenie">Queenie</persName>’s theatre.</p>
+                poster of one of the movies that had played at <persName key="Queenie" ref="#Queenie">Queenie</persName>’s theatre.</p>
         <p>‘You are
                 going to look so good when I take these rollers out,’ she said. ‘You won’t be saying
                 you haven’t got a boyfriend for very long.’</p>
         <p>‘But it’ll be too late to go looking today,’ she said. ‘Early
-                bird tomorrow. If <persName key="Stan">Stan</persName> asks you anything say you went to a couple of places and they
+                bird tomorrow. If <persName key="Stan" ref="#Stan">Stan</persName> asks you anything say you went to a couple of places and they
                 took your phone number. Say a store or a restaurant or anything just so long as
                 he thinks you’re looking.’</p>
         <p>I was hired the next day at the first place I tried, though I hadn’t
-                managed to be such an early bird after all. <persName key="Queenie">Queenie</persName> had decided to do my hair still
+                managed to be such an early bird after all. <persName key="Queenie" ref="#Queenie">Queenie</persName> had decided to do my hair still
                 another way and to make up my eyes, but the result was not what she had hoped
                 for. ‘You’re really more the natural type after all,’ she said, and I scrubbed
                 it all off and put on my own red lipstick.</p>
         <p>By this
-                time it was too late for <persName key="Queenie">Queenie</persName> to go out with me, to check on her Post Office box.
+                time it was too late for <persName key="Queenie" ref="#Queenie">Queenie</persName> to go out with me, to check on her Post Office box.
                 She had to get ready to go to the movie theatre. It was a Saturday, so she had to
                 work in the afternoon as well as in the evening. She got out her key and asked
                 me to check the box for her, as a favour. She explained to me where it
@@ -1018,12 +1045,12 @@
                 now?’</p>
         <p>I said yes.
                 I wasn’t so crushed as I might have been at first. All the time I was working I
-                thought what a relief it would be to go back and tell <persName key="Mr Vorguilla">Mr Vorguilla</persName> that yes, I had a
+                thought what a relief it would be to go back and tell <persName key="Mr Vorguilla" ref="#Stan">Mr Vorguilla</persName> that yes, I had a
                 job. Now I could go and look for a room of my own to live in. Maybe tomorrow,
-                Sunday, if the drugstore was closed. If I even had one room, I thought, <persName key="Queenie">Queenie</persName>
-            would have some place to run away to if <persName key="Mr Vorguilla">Mr Vorguilla</persName> got mad at her again. And
-            if <persName key="Queenie">Queenie</persName> ever decided to leave <persName key="Mr Vorguilla">Mr Vorguilla</persName> (I persisted in thinking of
-                this as a possibility in spite of how <persName key="Queenie">Queenie</persName> had finished her story) then with
+                Sunday, if the drugstore was closed. If I even had one room, I thought, <persName key="Queenie" ref="#Queenie">Queenie</persName>
+            would have some place to run away to if <persName key="Mr Vorguilla" ref="#Stan">Mr Vorguilla</persName> got mad at her again. And
+            if <persName key="Queenie" ref="#Queenie">Queenie</persName> ever decided to leave <persName key="Mr Vorguilla" ref="#Stan">Mr Vorguilla</persName> (I persisted in thinking of
+                this as a possibility in spite of how <persName key="Queenie" ref="#Queenie">Queenie</persName> had finished her story) then with
                 the pay from both our jobs maybe we could get a little apartment. Or at least a
                 room with a hotplate and a toilet and shower to ourselves. It would be like
                 when we lived at home with our parents except that our parents would be
@@ -1060,8 +1087,8 @@
                 behind a lunch counter. If anybody wanted a reference it would be tricky - but
                 I could say the lunch counter was in my home town. While I waited for the
                 streetcar I took out the list of other places where I meant to apply, and the
-                map that <persName key="Queenie">Queenie</persName> had given me. But it was later than I’d thought and most
-            places seemed too far away. I dreaded having to tell <persName key="Mr Vorguilla">Mr Vorguilla</persName>. I decided to
+                map that <persName key="Queenie" ref="#Queenie">Queenie</persName> had given me. But it was later than I’d thought and most
+            places seemed too far away. I dreaded having to tell <persName key="Mr Vorguilla" ref="#Stan">Mr Vorguilla</persName>. I decided to
                 walk back, in the hopes that when I got there he’d have gone.</p>
         <p>I had just
                 turned up the hill when I remembered the <placeName key="Post Office">Post Office</placeName>. I found my way back to it and
@@ -1069,25 +1096,25 @@
                 thought.</p>
         <p>But he
                 wasn’t. When I walked past the open living-room window that overlooked the path
-                beside the house, I heard music. It wasn’t what <persName key="Queenie">Queenie</persName> would play. It was the sort
+                beside the house, I heard music. It wasn’t what <persName key="Queenie" ref="#Queenie">Queenie</persName> would play. It was the sort
                 of complicated music that we had heard sometimes coming through the open
                 windows of the <persName key="Vorguillas">Vorguillas</persName>’ house - music that demanded your attention and then
                 didn’t go anywhere, or at least didn’t go anywhere fast enough.
                 Classical.</p>
-        <p><persName key="Queenie">Queenie</persName> was
+        <p><persName key="Queenie" ref="#Queenie">Queenie</persName> was
                 in the kitchen, wearing another of her skimpy dresses, and all her make-up. She had
                 bangles on her arms. She was setting tea-cups on a tray. I was dizzy for a moment
                 coming out of the sunlight, and every inch of my skin bloomed with
                 sweat.</p>
         <p>‘Shh,’
-                <persName key="Queenie">Queenie</persName> said, because I’d closed the door with a crash. ‘They’re in there listening
+                <persName key="Queenie" ref="#Queenie">Queenie</persName> said, because I’d closed the door with a crash. ‘They’re in there listening
                 to records. It’s him and his friend <persName key="Leslie">Leslie</persName>.’</p>
         <p>Just as she
                 said this the music came to an abrupt halt and there was a burst of excited
                 talk.</p>
         <p>‘One of
                 them plays a record and the other has to guess what it is just from a little bit of
-                it,’ <persName key="Queenie">Queenie</persName> said. ‘They play these little bits and then stop, over and over. It
+                it,’ <persName key="Queenie" ref="#Queenie">Queenie</persName> said. ‘They play these little bits and then stop, over and over. It
                 drives you crazy.’ She started cutting slices off a delicatessen chicken and
                 putting them on buttered slices of bread. ‘Did you get a job?’ she
             said.</p>
@@ -1101,7 +1128,7 @@
                 grabbed it from my hand and right at that moment the kettle on the stove began
                 to shriek.</p>
         <p>‘Oh, get
-                the kettle,’ she said. ‘<persName key="Chrissy">Chrissy</persName>, quick, quick. Get the kettle or he’ll be out here,
+                the kettle,’ she said. ‘<persName key="Chrissy" ref="#Chrissy">Chrissy</persName>, quick, quick. Get the kettle or he’ll be out here,
                 he can’t stand the sound.’</p>
         <p>She had
                 turned her back and was tearing open the envelope.</p>
@@ -1113,7 +1140,7 @@
         <p>‘Yes, yes,
                 just pour the water on, it’s measured.’ She laughed as if my asking her that was a
                 joke. I poured the water on the tealeaves and she said, ‘Thanks. Oh, thanks,
-                <persName key="Chrissy">Chrissy</persName>, thanks.’ She turned around and looked at me. Her face was rosy and all
+                <persName key="Chrissy" ref="#Chrissy">Chrissy</persName>, thanks.’ She turned around and looked at me. Her face was rosy and all
                 the bangles on her arms jingled with a delicate agitation. She folded up the
                 letter and pulled up her skirt and tucked it under the elastic waistband of her
                 underpants.</p>
@@ -1132,28 +1159,28 @@
                 think. I still had the sensation of the room moving around me, though it wasn’t
                 doing that any more in a physical way.</p>
         <p>I said,
-                ‘<persName key="Bet">Bet</persName>?’</p>
+                ‘<persName key="Bet" ref="#Bet">Bet</persName>?’</p>
         <p>Because I
-                had a hope that a private forgiveness from <persName key="Bet">Bet</persName> could be the thing that had made
-                <persName key="Queenie">Queenie</persName> burst into flower.</p>
+                had a hope that a private forgiveness from <persName key="Bet" ref="#Bet">Bet</persName> could be the thing that had made
+                <persName key="Queenie" ref="#Queenie">Queenie</persName> burst into flower.</p>
         <p>I had not
                 even looked at the writing on the envelope.</p>
-        <p><persName key="Queenie">Queenie</persName>’s
+        <p><persName key="Queenie" ref="#Queenie">Queenie</persName>’s
                 face changed, her mouth curled, and she said, ‘Hardly.’ Then she recovered her
                 happiness. She came and put her arms around me and spoke into my ear, in a voice
                 that was shivering and shy and triumphant. ‘It’s from <persName key="Andrew">Andrew</persName>,’ she said. ‘Can
                 you take the tray in to them. I can’t. I can’t right now. Oh, thank
                 you.’</p>
         <p>Before
-                <persName key="Queenie">Queenie</persName> went off to work she came into the living-room and kissed
-            both <persName key="Mr Vorguilla">Mr Vorguilla</persName> and his friend. She kissed both of them on their foreheads. She
+                <persName key="Queenie" ref="#Queenie">Queenie</persName> went off to work she came into the living-room and kissed
+            both <persName key="Mr Vorguilla" ref="#Stan">Mr Vorguilla</persName> and his friend. She kissed both of them on their foreheads. She
                 gave me a butterfly wave and said, ‘Bye bye.’</p>
         <p>When I had
-            brought the tray in I saw the annoyance on <persName key="Mr Vorguilla">Mr Vorguilla</persName>’s face, that it wasn’t
-                <persName key="Queenie">Queenie</persName>. But he spoke to me in a surprisingly tolerant way and introduced me to
+            brought the tray in I saw the annoyance on <persName key="Mr Vorguilla" ref="#Stan">Mr Vorguilla</persName>’s face, that it wasn’t
+                <persName key="Queenie" ref="#Queenie">Queenie</persName>. But he spoke to me in a surprisingly tolerant way and introduced me to
                 <persName key="Leslie">Leslie</persName>. <persName key="Leslie">Leslie</persName> was a stout bald man who at first looked to me almost as old as
-            <persName key="Mr Vorguilla">Mr Vorguilla</persName>, but when you got used to him and took his baldness into account
-            he looked much younger. He was not the sort of friend I would have expected <persName key="Mr Vorguilla">Mr
+            <persName key="Mr Vorguilla" ref="#Stan">Mr Vorguilla</persName>, but when you got used to him and took his baldness into account
+            he looked much younger. He was not the sort of friend I would have expected <persName key="Mr Vorguilla" ref="#Stan">Mr
                 Vorguilla</persName> to have. He was not brusque or know-it-all but comfortable and full
                 of encouragement. For example, when I told about my employment at the lunch
                 counter he said, ‘Well you know, that’s something. Getting hired the
@@ -1161,7 +1188,7 @@
                 good impression.’</p>
         <p>I had not
                 found the experience hard to talk about. The presence of <persName key="Leslie">Leslie</persName> made everything
-            easier and seemed to soften the behaviour of <persName key="Mr Vorguilla">Mr Vorguilla</persName>. As if he had to show me a
+            easier and seemed to soften the behaviour of <persName key="Mr Vorguilla" ref="#Stan">Mr Vorguilla</persName>. As if he had to show me a
                 decent courtesy in the presence of his friend. It could also have been that he
                 sensed a change in me. People do sense the difference, when you are not afraid
                 of them any more. He would not be sure of this difference and he would have no
@@ -1176,23 +1203,23 @@
                 think the husband might have come forward,’ said <persName key="Leslie">Leslie</persName>. ‘If he was the druggist, he
                 was the boss.’</p>
         <p>‘He ought
-            to brew up a special dose,’ <persName key="Mr Vorguilla">Mr Vorguilla</persName> said. ‘For his wife.’</p>
+            to brew up a special dose,’ <persName key="Mr Vorguilla" ref="#Stan">Mr Vorguilla</persName> said. ‘For his wife.’</p>
         <p>It wasn’t
                 so hard to pour out tea and offer milk and sugar and pass sandwiches, and even talk,
                 when you knew something other people didn’t know, about a danger they were in. It
                 was just because he didn’t know that I could feel something other than loathing
-                for <persName key="Mr Vorguilla">Mr Vorguilla</persName>. It wasn’t that he had changed in himself - or if he had
+                for <persName key="Mr Vorguilla" ref="#Stan">Mr Vorguilla</persName>. It wasn’t that he had changed in himself - or if he had
                 changed it was probably because I had. I had changed enough to feel now almost
-                less uneasy with him than I would have to feel with <persName key="Queenie">Queenie</persName>.</p>
+                less uneasy with him than I would have to feel with <persName key="Queenie" ref="#Queenie">Queenie</persName>.</p>
         <p>Mr
                 <persName key="Vorguilla">Vorguilla</persName> soon said that it was time for him to go to work. He went to change his
                 clothes. Then <persName key="Leslie">Leslie</persName> asked me if I would like to have supper with him.</p>
         <p>‘Just
                 around the corner there’s a place I go,’ he said. ‘Nothing fancy. Nothing like
-                <persName key="Stan">Stan</persName>’s place.’</p>
+                <persName key="Stan" ref="#Stan">Stan</persName>’s place.’</p>
         <p>I was glad
                 enough to hear that it wouldn’t be any place fancy. I said, ‘Sure.’ And after we had
-                dropped off <persName key="Mr Vorguilla">Mr Vorguilla</persName> at the restaurant we drove in <persName key="Leslie">Leslie</persName>’s car to a fish and
+                dropped off <persName key="Mr Vorguilla" ref="#Stan">Mr Vorguilla</persName> at the restaurant we drove in <persName key="Leslie">Leslie</persName>’s car to a fish and
                 chips place. <persName key="Leslie">Leslie</persName> ordered the Super Dinner - though he had just consumed
                 several chicken sandwiches - and I ordered the Regular. He had a beer and I had
                 a Coke.</p>
@@ -1202,19 +1229,19 @@
         <p>I was too
                 absorbed in my own situation even to ask him what kind of musician he was. My father
                 had bought me a return ticket, saying, ‘You never know how things are going to sit
-                with him and her.’ I had thought of that ticket at the moment I watched <persName key="Queenie">Queenie</persName>
+                with him and her.’ I had thought of that ticket at the moment I watched <persName key="Queenie" ref="#Queenie">Queenie</persName>
                 tucking <persName key="Andrew">Andrew</persName>’s letter under the fold of her underpants. Even though I didn’t
                 yet know that it was <persName key="Andrew">Andrew</persName>’s letter.</p>
         <p>I hadn’t
                 just come to <placeName key="Toronto">Toronto</placeName>, or come to <placeName key="Toronto">Toronto</placeName> to get a summer job. I had come to be part
-            of <persName key="Queenie">Queenie</persName>’s life, or if necessary, part of <persName key="Queenie">Queenie</persName>’s and <persName key="Mr Vorguilla">Mr Vorguilla</persName>’s life. Even
-                when I had the fantasy about <persName key="Queenie">Queenie</persName> living with me, the fantasy had something
-            to do with <persName key="Mr Vorguilla">Mr Vorguilla</persName> and how she would be serving him right.</p>
+            of <persName key="Queenie" ref="#Queenie">Queenie</persName>’s life, or if necessary, part of <persName key="Queenie" ref="#Queenie">Queenie</persName>’s and <persName key="Mr Vorguilla" ref="#Stan">Mr Vorguilla</persName>’s life. Even
+                when I had the fantasy about <persName key="Queenie" ref="#Queenie">Queenie</persName> living with me, the fantasy had something
+            to do with <persName key="Mr Vorguilla" ref="#Stan">Mr Vorguilla</persName> and how she would be serving him right.</p>
         <p>And when
                 I’d thought of the return ticket I was taking something else for granted. That I
-                could go back and live with <persName key="Bet">Bet</persName> and my father and be part of their life.</p>
+                could go back and live with <persName key="Bet" ref="#Bet">Bet</persName> and my father and be part of their life.</p>
         <p>My father
-            and <persName key="Bet">Bet</persName>. <persName key="Mr Vorguilla">Mr</persName> and <persName key="Mrs Vorguilla">Mrs Vorguilla</persName>. <persName key="Queenie">Queenie</persName> and <persName key="Mr Vorguilla">Mr Vorguilla</persName>. Even <persName key="Queenie">Queenie</persName> and <persName key="Andrew">Andrew</persName>.
+            and <persName key="Bet" ref="#Bet">Bet</persName>. <persName key="Mr Vorguilla" ref="#Stan">Mr</persName> and <persName key="Mrs Vorguilla">Mrs Vorguilla</persName>. <persName key="Queenie" ref="#Queenie">Queenie</persName> and <persName key="Mr Vorguilla" ref="#Stan">Mr Vorguilla</persName>. Even <persName key="Queenie" ref="#Queenie">Queenie</persName> and <persName key="Andrew">Andrew</persName>.
                 These were couples and each of them, however disjointed, had now or in memory a
                 private burrow with its own heat and confusion, from which I was cut off. And I
                 had to be, I wished to be, cut off, for there was nothing I could see in their
@@ -1238,17 +1265,17 @@
                 fagade of life.</p>
         <p>His company
                 was just what I needed at the moment, though I hardly realised it. Probably he was
-                being deliberately kind to me. As I had thought of myself being kind to <persName key="Mr Vorguilla">Mr
+                being deliberately kind to me. As I had thought of myself being kind to <persName key="Mr Vorguilla" ref="#Stan">Mr
                 Vorguilla</persName>, or at least protecting him, so unexpectedly, a little while
                 before.</p>
-        <p>I was at <orgName key="Teachers’ College">Teachers’ College</orgName> when <persName key="Queenie">Queenie</persName> ran away again. I got the
+        <p>I was at <orgName key="Teachers’ College">Teachers’ College</orgName> when <persName key="Queenie" ref="#Queenie">Queenie</persName> ran away again. I got the
                 news in a letter from my father. He said that he did not know just how or when it
-                happened. <persName key="Mr Vorguilla">Mr Vorguilla</persName> hadn’t let him know for a while, and then he had, in
-                case <persName key="Queenie">Queenie</persName> had come back home. My father had told <persName key="Mr Vorguilla">Mr Vorguilla</persName> he didn’t
+                happened. <persName key="Mr Vorguilla" ref="#Stan">Mr Vorguilla</persName> hadn’t let him know for a while, and then he had, in
+                case <persName key="Queenie" ref="#Queenie">Queenie</persName> had come back home. My father had told <persName key="Mr Vorguilla" ref="#Stan">Mr Vorguilla</persName> he didn’t
                 think there was much chance of that. In the letter to me he said that at least
-                it wasn’t now the kind of thing we would say <persName key="Queenie">Queenie</persName> wouldn’t do.</p>
+                it wasn’t now the kind of thing we would say <persName key="Queenie" ref="#Queenie">Queenie</persName> wouldn’t do.</p>
         <p>For years,
-            even after I was married, I would get a Christmas card from <persName key="Mr Vorguilla">Mr Vorguilla</persName>. Sleighs
+            even after I was married, I would get a Christmas card from <persName key="Mr Vorguilla" ref="#Stan">Mr Vorguilla</persName>. Sleighs
                 laden with bright parcels; a happy family in a decorated doorway, welcoming friends.
                 Perhaps he thought these were the sort of scenes that would appeal to me, in my
                 present way of life. Or perhaps he picked them blindly off the rack. He always
@@ -1262,7 +1289,7 @@
         <p>But now
                 something has happened. Now in the years when my children are grown up and my
                 husband has retired, and he and I are travelling a lot, I have an idea that
-                sometimes I see <persName key="Queenie">Queenie</persName>. It’s not through any particular wish or effort that I
+                sometimes I see <persName key="Queenie" ref="#Queenie">Queenie</persName>. It’s not through any particular wish or effort that I
                 see her, and it’s not as if I believed it was really her, either.</p>
         <p>Once it was
                 in a crowded airport, and she was wearing a sarong and a flower-trimmed straw hat.
@@ -1286,7 +1313,7 @@
         <p>The
                 shopping-cart was empty. She was not even carrying a purse.</p>
         <p>Unlike
-                those other women, this one seemed to know that she was <persName key="Queenie">Queenie</persName>. She smiled at me
+                those other women, this one seemed to know that she was <persName key="Queenie" ref="#Queenie">Queenie</persName>. She smiled at me
                 with such merriment of recognition, and such a yearning to be recognised, that you
                 would think this was a moment granted to her when she was let out of the
                 shadows for one day in a thousand.</p>
@@ -1297,7 +1324,7 @@
                 parking lot I made an excuse to my husband, said I’d forgotten something, and
                 hurried back into the store. I went up and down the aisles, looking. And in just
                 that little time the old woman seemed to have gone. She might have gone out
-                right after I did, and be making her way now along the streets of <placeName>Twin Falls</placeName>.
+                right after I did, and be making her way now along the streets of Twin Falls.
                 On foot, or in a car driven by some relative or neighbour, or even in a car she
                 drove herself. It was possible but hardly likely that she was still in the store,
                 and that we kept going up and down the aisles just missing each
