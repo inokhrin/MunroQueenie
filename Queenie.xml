@@ -46,6 +46,7 @@
 	"id": "https://raw.githubusercontent.com/inokhrin/MunroQueenie/master/Queenie.xml?place_annotation_20230511103425189",
 	"type": "oa:Annotation",
 	"dcterms:created": "2023-05-11T14:34:25.189Z",
+	"dcterms:modified": "2023-05-11T14:34:25.189Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/inokhrin",
 		"@type": [
@@ -72,7 +73,7 @@
 		"oa:hasSelector": {
 			"@id": "https://raw.githubusercontent.com/inokhrin/MunroQueenie/master/Queenie.xml?place_annotation_20230511103425189#Selector",
 			"@type": "oa:XPathSelector",
-			"rdf:value": "TEI/text/body/p[3]/placeName"
+			"rdf:value": "TEI/text/body/p[6]/placeName"
 		}
 	},
 	"oa:hasBody": {
@@ -124,6 +125,7 @@
 	"id": "https://raw.githubusercontent.com/inokhrin/MunroQueenie/master/Queenie.xml?organization_annotation_20230511103507887",
 	"type": "oa:Annotation",
 	"dcterms:created": "2023-05-11T14:35:07.887Z",
+	"dcterms:modified": "2023-05-11T14:35:07.887Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/inokhrin",
 		"@type": [
@@ -150,7 +152,7 @@
 		"oa:hasSelector": {
 			"@id": "https://raw.githubusercontent.com/inokhrin/MunroQueenie/master/Queenie.xml?organization_annotation_20230511103507887#Selector",
 			"@type": "oa:XPathSelector",
-			"rdf:value": "TEI/text/body/p[6]/orgName"
+			"rdf:value": "TEI/text/body/p[9]/orgName"
 		}
 	},
 	"oa:hasBody": {
@@ -197,7 +199,7 @@
   </teiHeader>
   <text>
       <body>
-        <p><persName key="Queenie" ref="#Queenie">Queenie</persName> said, ‘Maybe you better stop calling me that,’ and I said,
+        <p/><p/><p/><p><persName key="Queenie" ref="#Queenie">Queenie</persName> said, ‘Maybe you better stop calling me that,’ and I said,
                 ‘What?’</p>
         <p>‘<persName key="Stan" ref="#Stan">Stan</persName>
                 doesn’t like it,’ she said. ‘<persName key="Queenie" ref="#Queenie">Queenie</persName>.’</p>
