@@ -73,7 +73,7 @@
 		"oa:hasSelector": {
 			"@id": "https://raw.githubusercontent.com/inokhrin/MunroQueenie/master/Queenie.xml?place_annotation_20230511103425189#Selector",
 			"@type": "oa:XPathSelector",
-			"rdf:value": "TEI/text/body/p[6]/placeName"
+			"rdf:value": "TEI/text/body/p[9]/placeName"
 		}
 	},
 	"oa:hasBody": {
@@ -152,7 +152,7 @@
 		"oa:hasSelector": {
 			"@id": "https://raw.githubusercontent.com/inokhrin/MunroQueenie/master/Queenie.xml?organization_annotation_20230511103507887#Selector",
 			"@type": "oa:XPathSelector",
-			"rdf:value": "TEI/text/body/p[9]/orgName"
+			"rdf:value": "TEI/text/body/p[12]/orgName"
 		}
 	},
 	"oa:hasBody": {
@@ -199,7 +199,7 @@
   </teiHeader>
   <text>
       <body>
-        <p/><p/><p/><p><persName key="Queenie" ref="#Queenie">Queenie</persName> said, ‘Maybe you better stop calling me that,’ and I said,
+        <p/><p/><p/><p/><p/><p/><p><persName key="Queenie" ref="#Queenie">Queenie</persName> said, ‘Maybe you better stop calling me that,’ and I said,
                 ‘What?’</p>
         <p>‘<persName key="Stan" ref="#Stan">Stan</persName>
                 doesn’t like it,’ she said. ‘<persName key="Queenie" ref="#Queenie">Queenie</persName>.’</p>
